@@ -1,0 +1,64 @@
+
+body{
+    background-color: #042b5f;
+}
+
+.logo{
+    display: inline-block;
+    width: 120px;
+}
+.logo img{
+    width: 100%
+}
+
+.movieCard{
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+.movieCard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ratingSection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #032541;
+    padding: 1rem;
+    color: #fff;
+}
+.overviewSection{
+    position: absolute;
+    top: 125%;
+    height: 70%;
+    background: #fff;
+    padding: 1rem;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+
+.movieCard:hover  .overviewSection,
+.movieCard:focus .overviewSection,
+.movieCard:active .overviewSection{
+    top: 30%;
+    opacity: 1;
+}
+
+.movieName{
+    height: 33px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media all and (max-width : 1200px){
+    .navLogo,.navInput{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
